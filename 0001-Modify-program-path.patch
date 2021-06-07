@@ -1,0 +1,25 @@
+From 2bcd84e219708f72553b1e8d793173640791a0f4 Mon Sep 17 00:00:00 2001
+From: wei dong <weidong@uniontech.com>
+Date: Mon, 7 Jun 2021 16:58:17 +0800
+Subject: [PATCH] Modify program path
+
+---
+ src/booster-dtkwidget/deepin-turbo-booster-dtkwidget.service | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/booster-dtkwidget/deepin-turbo-booster-dtkwidget.service b/src/booster-dtkwidget/deepin-turbo-booster-dtkwidget.service
+index e9c0ba1..27aa4e6 100644
+--- a/src/booster-dtkwidget/deepin-turbo-booster-dtkwidget.service
++++ b/src/booster-dtkwidget/deepin-turbo-booster-dtkwidget.service
+@@ -4,7 +4,7 @@ After=display-manager.service
+ 
+ [Service]
+ Type=notify
+-ExecStart=/usr/lib/deepin-turbo/booster-dtkwidget --systemd
++ExecStart=/usr/lib64/deepin-turbo/booster-dtkwidget --systemd
+ Restart=always
+ RestartSec=1
+ OOMScoreAdjust=-250
+-- 
+2.27.0
+
